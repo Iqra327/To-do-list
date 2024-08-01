@@ -1,0 +1,17 @@
+body{
+  font-family: Roboto, sans-serif;
+  background-color: antiquewhite;
+}
+.add-button{
+  width: 70px;
+}
+.input-todo{
+  width: 300px;
+}
+.todo-list{
+  width: 300px;
+
+}
+.todo-container{
+  margin-left: 150px;
+}
