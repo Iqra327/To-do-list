@@ -1,17 +1,42 @@
 body{
   font-family: Roboto, sans-serif;
-  background-color: antiquewhite;
+  height: 100vh;
+  /* background: linear-gradient(to top, rgb(0, 170, 255), rgb(205, 151, 97)); */
+  background-color: rgb(229, 219, 176);
 }
-.add-button{
+.add-button, .delete-list-btn{
   width: 70px;
 }
-.input-todo{
-  width: 300px;
+.delete-list-btn{
+  background-color: rgb(158, 14, 4);
 }
-.todo-list{
-  width: 300px;
+.edit-list-btn{
+  font-size: 16px;
+  left: 305px;
+  background: none;
+}
+.input-todo, .todo-list{
+  width: 350px;
+}
 
+@media (max-width: 500px){
+  .input-todo, 
+  .todo-list{
+    width: 250px;
+  }
+  .edit-list-btn{
+    left: 200px;
+  }
 }
-.todo-container{
-  margin-left: 150px;
+
+@media (max-width: 290px){
+  .edit-list-btn{
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .add-button, .delete-list-btn{
+    margin-top: 10px;
+  }
 }
