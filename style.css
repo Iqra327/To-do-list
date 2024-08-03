@@ -2,7 +2,7 @@ body{
   font-family: Roboto, sans-serif;
   height: 100vh;
   /* background: linear-gradient(to top, rgb(0, 170, 255), rgb(205, 151, 97)); */
-  background-color: rgb(229, 219, 176);
+  background-color: rgb(221, 215, 186);
 }
 .add-button, .delete-list-btn{
   width: 70px;
@@ -12,11 +12,14 @@ body{
 }
 .edit-list-btn{
   font-size: 16px;
-  left: 305px;
+  left: 300px;
   background: none;
 }
 .input-todo, .todo-list{
   width: 350px;
+}
+.date{
+  margin-left: 205px;
 }
 
 @media (max-width: 500px){
@@ -27,16 +30,22 @@ body{
   .edit-list-btn{
     left: 200px;
   }
+  .date{
+    margin-left: 105px;
+  }
 }
 
 @media (max-width: 290px){
   .edit-list-btn{
-    bottom: 40px;
+    bottom: 75px;
   }
 }
 
 @media (max-width: 350px) {
   .add-button, .delete-list-btn{
     margin-top: 10px;
+  }
+  .date{
+    margin-left: 5px;
   }
 }
