@@ -1,25 +1,31 @@
 body{
   font-family: Roboto, sans-serif;
-  height: 100vh;
-  /* background: linear-gradient(to top, rgb(0, 170, 255), rgb(205, 151, 97)); */
-  background-color: rgb(221, 215, 186);
+  background-color: rgb(218, 221, 186);
 }
-.add-button, .delete-list-btn{
+
+.add-button, 
+.delete-list-btn{
   width: 70px;
 }
+
 .delete-list-btn{
   background-color: rgb(158, 14, 4);
 }
+
 .edit-list-btn{
   font-size: 16px;
   left: 300px;
   background: none;
 }
-.input-todo, .todo-list{
+
+.input-todo,
+.todo-list{
   width: 350px;
 }
+
 .date{
   margin-left: 205px;
+  color: rgb(106, 17, 11);
 }
 
 @media (max-width: 500px){
