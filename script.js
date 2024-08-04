@@ -7,10 +7,10 @@ function renderTodoList(){
 
   todoList.forEach((todoObject, index) => {
     
-    const time = new Date();
-    const date = time.getDate();
-    const day = time.getMonth();
-    const year = time.getFullYear();
+    const time = dayjs();
+    const date = time.date();
+    const day = time.month() + 1;
+    const year = time.year();
     const displayDate = `${date}/${day}/${year}`;
 
     const { name } =todoObject;   
