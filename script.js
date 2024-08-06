@@ -6,12 +6,6 @@ function renderTodoList(){
   let todoListHTML = '';
 
   todoList.forEach((todoObject, index) => {
-    
-    const time = dayjs();
-    const date = time.date();
-    const day = time.month() + 1;
-    const year = time.year();
-    const displayDate = `${date}/${day}/${year}`;
 
     const { name } =todoObject;   
     const html = `
@@ -20,7 +14,6 @@ function renderTodoList(){
           <input type="text" value="${name}" class=" todo-list js-todo-list-${index} me-1 p-2" disabled>
           <button class="p-2 text-success border-0 edit-list-btn position-absolute js-edit-list-btn">Edit</button>
           <button class="text-white p-2 border-0 delete-list-btn js-delete-list-btn">Delete</button><br>
-          <span class="date">${displayDate}</span>
         </div>
       </div>
     `
